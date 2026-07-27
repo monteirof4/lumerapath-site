@@ -114,8 +114,8 @@ function FreeTrainingModal() {
         id="training-modal-title"
         className="font-display mt-3 text-[1.9rem] font-semibold leading-tight text-navy-900"
       >
-        The Three Hidden Truths Behind{" "}
-        <span className="italic text-gold-600">the Success Trap</span>
+        The Hidden Identity Crisis {" "}
+        <span className="italic text-gold-600">of Successful Women</span>
       </h3>
       <p className="mt-4 font-medium leading-relaxed text-navy-900">
         You&rsquo;ve built a successful life. So why doesn&rsquo;t it feel
