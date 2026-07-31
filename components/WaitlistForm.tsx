@@ -36,13 +36,13 @@ export default function WaitlistForm() {
       className="mx-auto flex w-full max-w-xl flex-col gap-3 sm:flex-row"
     >
       <label className="sr-only" htmlFor="wl-first">
-        First Name
+        Full Name
       </label>
       <input
         id="wl-first"
-        name="firstName"
+        name="fullName"
         required
-        placeholder="First Name"
+        placeholder="Full Name"
         className="field-input flex-1 !border-cream/20 !bg-cream/10 !text-cream placeholder:!text-cream/50 focus:!border-gold-400"
       />
       <label className="sr-only" htmlFor="wl-email">
