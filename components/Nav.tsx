@@ -105,7 +105,7 @@ export default function Nav() {
             onClick={() => openModal("training")}
             className="btn btn-gold !px-5 !py-2.5 text-sm"
           >
-            Get the Free Training
+            Get the Free Masterclass
           </button>
         </div>
 
@@ -162,7 +162,7 @@ export default function Nav() {
                 }}
                 className="btn btn-gold w-full"
               >
-                Get the Free Training
+                Get the Free Masterclass
               </button>
               <button
                 type="button"

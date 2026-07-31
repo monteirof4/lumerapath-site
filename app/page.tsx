@@ -91,7 +91,7 @@ export default function HomePage() {
             <Reveal delay={420}>
               <div className="mt-10 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
                 <OpenModalButton modal="training" className="btn btn-gold">
-                  Get the Free Training
+                  Get the Free Masterclass
                   <span className="btn-arrow" aria-hidden>
                     →
                   </span>
