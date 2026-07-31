@@ -93,7 +93,7 @@ export default function TestimonialsPage() {
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <OpenModalButton modal="training" className="btn btn-gold">
-                Get the Free Training
+                Get the Free Masterclass
                 <span className="btn-arrow" aria-hidden>
                   →
                 </span>

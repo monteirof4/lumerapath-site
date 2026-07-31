@@ -45,7 +45,7 @@ export default function Footer() {
               onClick={() => openModal("training")}
               className="btn btn-gold"
             >
-              Get the Free Training
+              Get the Free Masterclass
               <span className="btn-arrow" aria-hidden>
                 →
               </span>
@@ -145,7 +145,7 @@ export default function Footer() {
                   onClick={() => openModal("training")}
                   className="transition-colors hover:text-gold-300"
                 >
-                  Get the Free Training
+                  Get the Free Masterclass
                 </button>
               </li>
               <li>
