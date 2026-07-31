@@ -200,6 +200,31 @@ function FreeTrainingModal() {
             />
           </div>
         </div>
+
+        <div className="grid gap-3 sm:grid-cols-2">
+          <label className="flex cursor-pointer items-center gap-3 rounded-2xl border border-gold-400/35 bg-white/70 px-4 py-3 text-sm font-medium text-navy-900 shadow-[0_12px_28px_-22px_rgb(18_32_63/0.4)]">
+            <input
+              type="radio"
+              name="trainingDate"
+              value="08/13/2026 6PM EST"
+              required
+              className="h-4 w-4 accent-gold-600"
+            />
+            08/13/2026 6PM EST
+          </label>
+
+          <label className="flex cursor-pointer items-center gap-3 rounded-2xl border border-gold-400/35 bg-white/70 px-4 py-3 text-sm font-medium text-navy-900 shadow-[0_12px_28px_-22px_rgb(18_32_63/0.4)]">
+            <input
+              type="radio"
+              name="trainingDate"
+              value="08/19/2026 1PM EST"
+              required
+              className="h-4 w-4 accent-gold-600"
+            />
+            08/19/2026 1PM EST
+          </label>
+        </div>
+
         <button
           type="submit"
           disabled={status === "submitting"}
