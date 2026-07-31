@@ -53,14 +53,14 @@ export default function ContactForm() {
         <div className="grid gap-4 sm:grid-cols-2">
           <div>
             <label className="field-label" htmlFor="contact-name">
-              Your Name
+              Full Name
             </label>
             <input
               id="contact-name"
-              name="firstName"
+              name="fullName"
               required
               className="field-input"
-              placeholder="First name"
+              placeholder="Your full name"
             />
           </div>
           <div>

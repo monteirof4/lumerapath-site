@@ -151,14 +151,14 @@ function FreeTrainingModal() {
         <div className="grid gap-4 sm:grid-cols-2">
           <div>
             <label className="field-label" htmlFor="ft-first">
-              First Name
+              Full Name
             </label>
             <input
               id="ft-first"
-              name="firstName"
+              name="fullName"
               required
               className="field-input"
-              placeholder="Your first name"
+              placeholder="Your full name"
             />
           </div>
           <div>
@@ -175,10 +175,10 @@ function FreeTrainingModal() {
             />
           </div>
         </div>
-        <div className="grid gap-4 sm:grid-cols-[110px_1fr]">
+        <div className="grid gap-4 sm:grid-cols-[130px_1fr]">
           <div>
             <label className="field-label" htmlFor="ft-code">
-              Country Code
+              Code
             </label>
             <input
               id="ft-code"
@@ -189,7 +189,7 @@ function FreeTrainingModal() {
           </div>
           <div>
             <label className="field-label" htmlFor="ft-phone">
-              Phone Number
+              Phone
             </label>
             <input
               id="ft-phone"
@@ -275,14 +275,14 @@ function ClarityCallModal() {
         <div className="grid gap-4 sm:grid-cols-2">
           <div>
             <label className="field-label" htmlFor="cc-first">
-              First Name
+              Full Name
             </label>
             <input
               id="cc-first"
-              name="firstName"
+              name="fullName"
               required
               className="field-input"
-              placeholder="First name"
+              placeholder="Your full name"
             />
           </div>
           <div>
