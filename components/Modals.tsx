@@ -114,18 +114,16 @@ function FreeTrainingModal() {
         id="training-modal-title"
         className="font-display mt-3 text-[1.9rem] font-semibold leading-tight text-navy-900"
       >
-        The Hidden Identity Crisis {" "}
-        <span className="italic text-gold-600">of Successful Women</span>
+        The Moment of Choice
       </h3>
       <p className="mt-4 font-medium leading-relaxed text-navy-900">
-        You&rsquo;ve built a successful life. So why doesn&rsquo;t it feel
-        fully like yours anymore?
+        You know what needs to change. So why do you keep falling back into the
+        same patterns?
       </p>
       <p className="mt-3 text-sm leading-relaxed text-ink-soft">
-        Join this complimentary executive masterclass and discover why so many
-        high-achieving women keep returning to the same patterns, even after
-        coaching, books, and leadership programs, and why lasting
-        transformation begins with an Identity Reset.
+        Join this complimentary masterclass and discover what happens in the
+        space between awareness and transformation, and why knowing what needs to
+        change is not the same as becoming the woman who can live it.
       </p>
       <p className="mt-4 text-xs font-bold uppercase tracking-[0.18em] text-gold-700">
         In this free 90-minute masterclass, you&rsquo;ll discover:
@@ -133,10 +131,10 @@ function FreeTrainingModal() {
 
       <ul className="mt-3 space-y-3">
         {[
-          "Why success can start feeling disconnected.",
-          "The hidden identity patterns keeping you stuck.",
-          "Why awareness alone is not enough.",
-          "How The Bridge Identity Reset™ helps you reconnect with yourself and build what's next.",
+          "Why awareness alone doesn’t create lasting change.",
+          "What keeps you repeating patterns you already understand.",
+          "How to recognize the moment when a different choice becomes possible.",
+          "How conscious choices build self-trust and a new way of leading.",
         ].map((item) => (
           <li key={item} className="flex gap-3 text-sm leading-relaxed text-ink">
             <span className="mt-0.5 font-semibold text-gold-600" aria-hidden>
