@@ -1,8 +1,15 @@
 "use client";
 
+import type { Metadata } from "next";
 import Link from "next/link";
 import { useState, type FormEvent } from "react";
 import { submitLead as postLead } from "@/lib/leads";
+
+export const metadata: Metadata = {
+  title: "The Moment of Choice",
+  description:
+    "Join this complimentary masterclass and discover what happens in the space between awareness and transformation.",
+};
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -76,18 +83,19 @@ export default function FreeTrainingPage() {
 
       <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
         <div className="rounded-[2rem] border border-navy-900/10 bg-white/70 p-8 shadow-[0_30px_80px_-35px_rgb(15_28_54/0.45)] backdrop-blur-sm">
-          <p className="overline-label">The Moment of Choice</p>
+          <p className="overline-label">Free Masterclass</p>
           <h1 className="font-display mt-5 text-4xl font-semibold leading-tight text-navy-900 sm:text-5xl">
-            You know what needs to change.
+            The Moment of Choice
           </h1>
           <p className="mt-5 text-lg leading-relaxed text-navy-900">
-            So why do you keep falling back into the same patterns?
+            You know what needs to change. So why do you keep falling back into the
+            same patterns?
           </p>
 
           <p className="mt-4 text-sm leading-relaxed text-ink-soft">
             Join this complimentary masterclass and discover what happens in the
-            space between awareness and transformation, and why knowing what needs
-            to change is not the same as becoming the woman who can live it.
+            space between awareness and transformation, and why knowing what needs to
+            change is not the same as becoming the woman who can live it.
           </p>
 
           <div className="mt-8 rounded-2xl border border-gold-400/30 bg-gold-50/70 p-5">

@@ -1,8 +1,15 @@
 "use client";
 
+import type { Metadata } from "next";
 import Link from "next/link";
 import { useState, type FormEvent } from "react";
 import { submitLead as postLead } from "@/lib/leads";
+
+export const metadata: Metadata = {
+  title: "Book a Clarity Call",
+  description:
+    "Tell us where the pressure is sitting right now and book a private fit check conversation.",
+};
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -76,14 +83,15 @@ export default function ClarityCallPage() {
 
       <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
         <div className="rounded-[2rem] border border-navy-900/10 bg-white/70 p-8 shadow-[0_30px_80px_-35px_rgb(15_28_54/0.45)] backdrop-blur-sm">
-          <p className="overline-label">Book a Clarity Call</p>
+          <p className="overline-label">Private Fit Check</p>
           <h1 className="font-display mt-5 text-4xl font-semibold leading-tight text-navy-900 sm:text-5xl">
-            Tell us where the pressure is sitting right now.
+            Book a Clarity Call
           </h1>
 
           <p className="mt-5 text-sm leading-relaxed text-ink-soft">
-            We will use this to make the call specific, useful, and honest about
-            whether The Bridge is the right next step.
+            Tell us where the pressure is sitting right now. We will use this to
+            make the call specific, useful, and honest about whether The Bridge is
+            the right next step.
           </p>
 
           <div className="mt-8 rounded-2xl border border-gold-400/30 bg-gold-50/70 p-5">
