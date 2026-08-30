@@ -67,19 +67,27 @@ export default function ClarityCallForm() {
 
   return (
     <div className="mx-auto max-w-5xl px-5 py-20 lg:px-8">
-      <div className="mb-8 flex items-center justify-between gap-4">
+      <div className="mb-8 flex items-center gap-4">
         <Link href="/" className="text-sm font-medium text-navy-900 underline-offset-4 hover:underline">
           ← Back to home
         </Link>
-        <span className="overline-label">Private Fit Check</span>
       </div>
 
       <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
         <div className="rounded-[2rem] border border-navy-900/10 bg-white/70 p-8 shadow-[0_30px_80px_-35px_rgb(15_28_54/0.45)] backdrop-blur-sm">
-          <p className="overline-label">Private Fit Check</p>
-          <h1 className="font-display mt-5 text-4xl font-semibold leading-tight text-navy-900 sm:text-5xl">
-            Book a Clarity Call
-          </h1>
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+            <div>
+              <p className="overline-label">Private Fit Check</p>
+              <h1 className="font-display mt-5 text-4xl font-semibold leading-tight text-navy-900 sm:text-5xl">
+                Book a Clarity Call
+              </h1>
+            </div>
+            <div className="rounded-2xl border border-gold-400/35 bg-white/70 px-4 py-3 text-sm text-ink-soft shadow-[0_12px_28px_-22px_rgb(18_32_63/0.4)]">
+              <span className="font-semibold text-navy-900">30 min</span>
+              <span className="mx-2 text-gold-600">•</span>
+              no pressure
+            </div>
+          </div>
 
           <p className="mt-5 text-sm leading-relaxed text-ink-soft">
             Tell us where the pressure is sitting right now. We will use this to

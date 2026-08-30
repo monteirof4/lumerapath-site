@@ -67,11 +67,10 @@ export default function FreeTrainingForm() {
 
   return (
     <div className="mx-auto max-w-6xl px-5 py-20 lg:px-8">
-      <div className="mb-8 flex items-center justify-between gap-4">
+      <div className="mb-8">
         <Link href="/" className="text-sm font-medium text-navy-900 underline-offset-4 hover:underline">
           ← Back to home
         </Link>
-        <span className="overline-label">Free Masterclass</span>
       </div>
 
       <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
