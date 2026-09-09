@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import FreeTrainingForm from "@/components/FreeTrainingForm";
 
 export const metadata: Metadata = {
-  title: "The Moment of Choice",
+  title: "Why Is There Never Time for Me?",
   description:
-    "Join this complimentary masterclass and discover what happens in the space between awareness and transformation.",
+    "A practical class to stop postponing what matters to you.",
 };
 
 export default function FreeTrainingPage() {
