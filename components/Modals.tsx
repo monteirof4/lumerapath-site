@@ -114,27 +114,31 @@ function FreeTrainingModal() {
         id="training-modal-title"
         className="font-display mt-3 text-[1.9rem] font-semibold leading-tight text-navy-900"
       >
-        The Moment of Choice
+        Why Is There Never Time for Me?
       </h3>
+      <p className="mt-4 text-lg italic leading-relaxed text-navy-900">
+        A practical class to stop postponing what matters to you.
+      </p>
       <p className="mt-4 font-medium leading-relaxed text-navy-900">
-        You know what needs to change. So why do you keep falling back into the
-        same patterns?
+        You keep telling yourself you&rsquo;ll make time for yourself when things calm
+        down. So why does your time keep going to everything and everyone else?
       </p>
       <p className="mt-3 text-sm leading-relaxed text-ink-soft">
-        Join this complimentary masterclass and discover what happens in the
-        space between awareness and transformation, and why knowing what needs to
-        change is not the same as becoming the woman who can live it.
+        Join this complimentary masterclass and discover why what matters to you can
+        so easily become the most flexible part of your calendar, and how to begin
+        protecting your time without adding more pressure, guilt, or another long list
+        of things to do.
       </p>
       <p className="mt-4 text-xs font-bold uppercase tracking-[0.18em] text-gold-700">
-        In this free 90-minute masterclass, you&rsquo;ll discover:
+        In this free 60-minute masterclass, you&rsquo;ll discover:
       </p>
 
       <ul className="mt-3 space-y-3">
         {[
-          "Why awareness alone doesn’t create lasting change.",
-          "What keeps you repeating patterns you already understand.",
-          "How to recognize the moment when a different choice becomes possible.",
-          "How conscious choices build self-trust and a new way of leading.",
+          "Why being busy isn’t always the whole reason you don’t have time for yourself.",
+          "How to recognize what consistently gets your time and what keeps getting postponed.",
+          "How to identify the patterns that make your own priorities the easiest ones to move.",
+          "How to use the Time Alignment Check™ to choose one thing that matters and protect time for it this week.",
         ].map((item) => (
           <li key={item} className="flex gap-3 text-sm leading-relaxed text-ink">
             <span className="mt-0.5 font-semibold text-gold-600" aria-hidden>
@@ -204,21 +208,21 @@ function FreeTrainingModal() {
             <input
               type="radio"
               name="trainingDate"
-              value="09/03/2026 6PM EST"
+              value="10/16/2026 6PM EST"
               required
               className="h-4 w-4 accent-gold-600"
             />
-            09/03/2026 at 6pm EST
+            10/16/2026 at 6pm EST
           </label>
 
           <label className="flex cursor-pointer items-center gap-3 rounded-2xl border border-gold-400/35 bg-white/70 px-4 py-3 text-sm font-medium text-navy-900 shadow-[0_12px_28px_-22px_rgb(18_32_63/0.4)]">
             <input
               type="radio"
               name="trainingDate"
-              value="09/10/2026 1PM EST"
+              value="10/23/2026 1PM EST"
               className="h-4 w-4 accent-gold-600"
             />
-            09/10/2026 at 1pm EST
+            10/23/2026 at 1pm EST
           </label>
         </div>
 
