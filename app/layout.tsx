@@ -10,6 +10,8 @@ import LenisScroller from "@/components/LenisScroller";
 import IntroLoader from "@/components/IntroLoader";
 import PaymentGate from "@/components/PaymentGate";
 import { pageUrl, siteUrl } from "@/lib/site";
+import { siteJsonLd } from "@/lib/structuredData";
+import JsonLd from "@/components/JsonLd";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -74,6 +76,7 @@ export default function RootLayout({
       className={`${cormorant.variable} ${figtree.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <JsonLd data={siteJsonLd} />
         <ModalProvider>
           <IntroLoader />
           <LenisScroller />
