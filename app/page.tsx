@@ -7,11 +7,13 @@ import Marquee from "@/components/Marquee";
 import CountUp from "@/components/CountUp";
 import PinnedShiftSection from "@/components/PinnedShiftSection";
 import ContactSection from "@/components/ContactSection";
+import { pageUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "You Don't Need a New Strategy. You Need an Identity Reset. | The Bridge Identity Reset™",
   description:
     "The Bridge Identity Reset™ helps high-performing women leaders close the gap between the person the world sees and the woman quietly overwhelmed and running on empty, in 8 weeks.",
+  alternates: { canonical: pageUrl("/") },
 };
 
 const forYouIf = [
