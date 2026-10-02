@@ -33,7 +33,7 @@ const siteDescription =
   "The Bridge Identity Reset™ helps high-performing women leaders close the gap between the person the world sees and the woman quietly overwhelmed and running on empty, in 8 weeks.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://bridge.lumerapath.com"),
+  metadataBase: new URL("https://www.lumerapath.com"),
   title: {
     default: "You Don't Need a New Strategy. You Need an Identity Reset.",
     template: "%s | The Bridge Identity Reset™",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "The Bridge Identity Reset™",
     description: siteDescription,
-    url: "https://bridge.lumerapath.com",
+    url: "https://www.lumerapath.com/",
     siteName: "The Bridge Identity Reset™",
     type: "website",
     images: [
