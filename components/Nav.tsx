@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { useModal } from "./ModalContext";
 
 const links = [
   { href: "/", label: "Home" },
@@ -44,7 +43,6 @@ function Logo() {
 }
 
 export default function Nav() {
-  const { openModal } = useModal();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -93,20 +91,18 @@ export default function Nav() {
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <button
-            type="button"
-            onClick={() => openModal("clarity")}
+          <Link
+            href="/clarity-call"
             className="btn btn-outline !px-5 !py-2.5 text-sm"
           >
             Book a Clarity Call
-          </button>
-          <button
-            type="button"
-            onClick={() => openModal("training")}
+          </Link>
+          <Link
+            href="/free-training"
             className="btn btn-gold !px-5 !py-2.5 text-sm"
           >
             Get the Free Masterclass
-          </button>
+          </Link>
         </div>
 
         <button
@@ -154,26 +150,20 @@ export default function Nav() {
               ))}
             </nav>
             <div className="mt-5 flex flex-col gap-3">
-              <button
-                type="button"
-                onClick={() => {
-                  setMenuOpen(false);
-                  openModal("training");
-                }}
+              <Link
+                href="/free-training"
+                onClick={() => setMenuOpen(false)}
                 className="btn btn-gold w-full"
               >
                 Get the Free Masterclass
-              </button>
-              <button
-                type="button"
-                onClick={() => {
-                  setMenuOpen(false);
-                  openModal("clarity");
-                }}
+              </Link>
+              <Link
+                href="/clarity-call"
+                onClick={() => setMenuOpen(false)}
                 className="btn btn-outline w-full"
               >
                 Book a Clarity Call
-              </button>
+              </Link>
             </div>
           </div>
         </div>

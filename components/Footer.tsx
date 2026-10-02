@@ -1,12 +1,7 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { useModal } from "./ModalContext";
 
 export default function Footer() {
-  const { openModal } = useModal();
-
   return (
     <footer className="navy-glow grain relative overflow-hidden pb-[env(safe-area-inset-bottom)] text-cream">
       <div
@@ -40,23 +35,15 @@ export default function Footer() {
             confidence, and purpose.
           </p>
           <div className="flex flex-col items-center gap-4 sm:flex-row">
-            <button
-              type="button"
-              onClick={() => openModal("training")}
-              className="btn btn-gold"
-            >
+            <Link href="/free-training" className="btn btn-gold">
               Get the Free Masterclass
               <span className="btn-arrow" aria-hidden>
                 →
               </span>
-            </button>
-            <button
-              type="button"
-              onClick={() => openModal("clarity")}
-              className="btn btn-outline-light"
-            >
+            </Link>
+            <Link href="/clarity-call" className="btn btn-outline-light">
               Book a Clarity Call
-            </button>
+            </Link>
             <Link href="/program" className="btn btn-outline-light">
               Explore the Program
             </Link>
@@ -140,22 +127,20 @@ export default function Footer() {
             </p>
             <ul className="mt-4 space-y-3 text-sm text-cream/75">
               <li>
-                <button
-                  type="button"
-                  onClick={() => openModal("training")}
+                <Link
+                  href="/free-training"
                   className="transition-colors hover:text-gold-300"
                 >
                   Get the Free Masterclass
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  type="button"
-                  onClick={() => openModal("clarity")}
+                <Link
+                  href="/clarity-call"
                   className="transition-colors hover:text-gold-300"
                 >
                   Book a Clarity Call
-                </button>
+                </Link>
               </li>
               <li>
                 <Link
