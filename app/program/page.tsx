@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "The Bridge Identity Reset™, The 8-Week Program",
     description: pageDescription,
-    url: "https://bridge.lumerapath.com/program/",
+    url: "https://www.lumerapath.com/program/",
     siteName: "The Bridge Identity Reset™",
     type: "website",
     images: ogImages,
