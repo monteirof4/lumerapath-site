@@ -6,7 +6,7 @@ import WaitlistForm from "@/components/WaitlistForm";
 import Marquee from "@/components/Marquee";
 import PinnedJourneySection from "@/components/PinnedJourneySection";
 import Icon from "@/components/Icon";
-import { siteUrl } from "@/lib/site";
+import { pageUrl } from "@/lib/site";
 
 const pageDescription =
   "An 8-week leadership program built by former executives, for driven women leaders ready to move from exhaustion and self-doubt to clear, confident direction.";
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "The Bridge Identity Reset™, The 8-Week Program",
     description: pageDescription,
-    url: `${siteUrl}/program/`,
+    url: pageUrl("/program"),
     siteName: "The Bridge Identity Reset™",
     type: "website",
     images: ogImages,
@@ -37,6 +37,7 @@ export const metadata: Metadata = {
     description: pageDescription,
     images: ogImages,
   },
+  alternates: { canonical: pageUrl("/program") },
 };
 
 const audience = [

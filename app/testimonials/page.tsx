@@ -2,12 +2,14 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
 import OpenModalButton from "@/components/OpenModalButton";
+import { pageUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Testimonials",
   description:
     "Stories from the executive women who walked The Bridge Identity Reset™ and came out leading from clarity, conviction, and self-trust.",
   robots: { index: false },
+  alternates: { canonical: pageUrl("/testimonials") },
 };
 
 /**

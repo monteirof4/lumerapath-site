@@ -9,7 +9,7 @@ import ScrollProgress from "@/components/ScrollProgress";
 import LenisScroller from "@/components/LenisScroller";
 import IntroLoader from "@/components/IntroLoader";
 import PaymentGate from "@/components/PaymentGate";
-import { siteUrl } from "@/lib/site";
+import { pageUrl, siteUrl } from "@/lib/site";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "The Bridge Identity Reset™",
     description: siteDescription,
-    url: `${siteUrl}/`,
+    url: pageUrl("/"),
     siteName: "The Bridge Identity Reset™",
     type: "website",
     images: [
