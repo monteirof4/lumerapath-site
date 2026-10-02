@@ -1,8 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Figtree } from "next/font/google";
 import "./globals.css";
-import { ModalProvider } from "@/components/ModalContext";
-import Modals from "@/components/Modals";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import ScrollProgress from "@/components/ScrollProgress";
@@ -77,15 +75,12 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <JsonLd data={siteJsonLd} />
-        <ModalProvider>
-          <IntroLoader />
-          <LenisScroller />
-          <ScrollProgress />
-          <Nav />
-          <main className="flex-1">{children}</main>
-          <Footer />
-          <Modals />
-        </ModalProvider>
+        <IntroLoader />
+        <LenisScroller />
+        <ScrollProgress />
+        <Nav />
+        <main className="flex-1">{children}</main>
+        <Footer />
         <PaymentGate />
       </body>
     </html>

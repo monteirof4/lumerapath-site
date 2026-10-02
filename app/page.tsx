@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
-import OpenModalButton from "@/components/OpenModalButton";
 import Marquee from "@/components/Marquee";
 import CountUp from "@/components/CountUp";
 import PinnedShiftSection from "@/components/PinnedShiftSection";
@@ -92,12 +91,12 @@ export default function HomePage() {
             </Reveal>
             <Reveal delay={420}>
               <div className="mt-10 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
-                <OpenModalButton modal="training" className="btn btn-gold">
+                <Link href="/free-training" className="btn btn-gold">
                   Get the Free Masterclass
                   <span className="btn-arrow" aria-hidden>
                     →
                   </span>
-                </OpenModalButton>
+                </Link>
                 <Link href="/program" className="btn btn-outline">
                   Explore the Program
                 </Link>
@@ -387,12 +386,12 @@ export default function HomePage() {
                     <strong className="text-navy-900">Identity Reset</strong>,
                     not simply another strategy.
                   </p>
-                  <OpenModalButton modal="training" className="btn btn-navy mt-9">
+                  <Link href="/free-training" className="btn btn-navy mt-9">
                     Save My Seat
                     <span className="btn-arrow" aria-hidden>
                       →
                     </span>
-                  </OpenModalButton>
+                  </Link>
                 </div>
                 <div className="relative mx-auto flex w-full max-w-xs flex-col items-center text-center">
                   <div

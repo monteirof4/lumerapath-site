@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import OpenModalButton from "./OpenModalButton";
 import ShiftGraphic from "./ShiftGraphic";
 
 const beats = [
@@ -178,15 +177,15 @@ export default function PinnedShiftSection() {
             </div>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
-              <OpenModalButton modal="training" className="btn btn-gold">
+              <Link href="/free-training" className="btn btn-gold">
                 Get the Free Masterclass
                 <span className="btn-arrow" aria-hidden>
                   →
                 </span>
-              </OpenModalButton>
-              <OpenModalButton modal="clarity" className="btn btn-outline-light">
+              </Link>
+              <Link href="/clarity-call" className="btn btn-outline-light">
                 Book a Clarity Call
-              </OpenModalButton>
+              </Link>
               <Link href="/program" className="btn btn-outline-light">
                 Explore the Program
               </Link>

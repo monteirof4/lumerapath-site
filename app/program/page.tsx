@@ -1,7 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
-import OpenModalButton from "@/components/OpenModalButton";
 import WaitlistForm from "@/components/WaitlistForm";
 import Marquee from "@/components/Marquee";
 import PinnedJourneySection from "@/components/PinnedJourneySection";
@@ -218,9 +218,9 @@ export default function ProgramPage() {
                     →
                   </span>
                 </a>
-                <OpenModalButton modal="clarity" className="btn btn-outline">
+                <Link href="/clarity-call" className="btn btn-outline">
                   Book a Clarity Call
-                </OpenModalButton>
+                </Link>
               </div>
               <div className="mt-8 flex items-center gap-4">
                 <div className="flex -space-x-3">
@@ -784,12 +784,9 @@ export default function ProgramPage() {
               this is the right fit, the right time, and the right next step for
               you.
             </p>
-            <OpenModalButton
-              modal="clarity"
-              className="btn btn-outline-light mt-8"
-            >
+            <Link href="/clarity-call" className="btn btn-outline-light mt-8">
               Book a Clarity Call
-            </OpenModalButton>
+            </Link>
             <p className="mt-7 text-xs text-cream/50">
               We also offer one-on-one coaching for those interested in more
               dedicated support.

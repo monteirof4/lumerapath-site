@@ -1,7 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
-import OpenModalButton from "@/components/OpenModalButton";
 import { pageUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -94,15 +94,15 @@ export default function TestimonialsPage() {
               Want to be one of the women these stories are about?
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <OpenModalButton modal="training" className="btn btn-gold">
+              <Link href="/free-training" className="btn btn-gold">
                 Get the Free Masterclass
                 <span className="btn-arrow" aria-hidden>
                   →
                 </span>
-              </OpenModalButton>
-              <OpenModalButton modal="clarity" className="btn btn-outline">
+              </Link>
+              <Link href="/clarity-call" className="btn btn-outline">
                 Book a Clarity Call
-              </OpenModalButton>
+              </Link>
             </div>
           </Reveal>
         </div>
