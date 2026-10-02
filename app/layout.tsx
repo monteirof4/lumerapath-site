@@ -9,6 +9,7 @@ import ScrollProgress from "@/components/ScrollProgress";
 import LenisScroller from "@/components/LenisScroller";
 import IntroLoader from "@/components/IntroLoader";
 import PaymentGate from "@/components/PaymentGate";
+import { siteUrl } from "@/lib/site";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -33,7 +34,7 @@ const siteDescription =
   "The Bridge Identity Reset™ helps high-performing women leaders close the gap between the person the world sees and the woman quietly overwhelmed and running on empty, in 8 weeks.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.lumerapath.com"),
+  metadataBase: new URL(siteUrl),
   title: {
     default: "You Don't Need a New Strategy. You Need an Identity Reset.",
     template: "%s | The Bridge Identity Reset™",
@@ -42,7 +43,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "The Bridge Identity Reset™",
     description: siteDescription,
-    url: "https://www.lumerapath.com/",
+    url: `${siteUrl}/`,
     siteName: "The Bridge Identity Reset™",
     type: "website",
     images: [
