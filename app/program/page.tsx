@@ -7,6 +7,8 @@ import Marquee from "@/components/Marquee";
 import PinnedJourneySection from "@/components/PinnedJourneySection";
 import Icon from "@/components/Icon";
 import { pageUrl } from "@/lib/site";
+import { programJsonLd } from "@/lib/structuredData";
+import JsonLd from "@/components/JsonLd";
 
 const pageDescription =
   "An 8-week leadership program built by former executives, for driven women leaders ready to move from exhaustion and self-doubt to clear, confident direction.";
@@ -112,6 +114,7 @@ const bonuses = [
 export default function ProgramPage() {
   return (
     <>
+      <JsonLd data={programJsonLd} />
       {/* Hero */}
       <section className="hero-vignette grain relative overflow-hidden pb-14 pt-24 lg:pb-16">
         <div
